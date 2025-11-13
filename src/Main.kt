@@ -6,17 +6,39 @@ fun main() {
 //    student.introduce()
 //    student.haveBirthday()
 
-    val student1 = Student("Иван", 19)
-    val student2 = Student("Денис", 20)
+//    val student1 = Student("Иван", 19)
+//    val student2 = Student("Денис", 20)
+//
+//    val group = Group("ИСП-231")
+//
+//    group.addStudent(student1)
+//    group.addStudent(student2)
+//
+//    group.listStudents()
+//
+//    group.celebrateBirthdays()
+//
+//    group.listStudents()
 
-    val group = Group("ИСП-231")
 
-    group.addStudent(student1)
-    group.addStudent(student2)
+    val calc = GeometryCalculator()
 
-    group.listStudents()
+    println("=== ПРЯМОУГОЛЬНИКИ ===")
+    calc.rectangleInfo(4, 5)
+    println()
+    calc.rectangleInfo(3, 6)
+    println()
 
-    group.celebrateBirthdays()
+    println("=== ТРЕУГОЛЬНИКИ ===")
+    calc.triangleInfo(3, 4, 5)
+    println()
+    calc.triangleInfo(5, 5, 5)
+    println()
+    calc.triangleInfo(2, 3, 4)
+    println()
 
-    group.listStudents()
+    println("=== ОКРУЖНОСТИ ===")
+    calc.circleInfo(5)
+    println()
+    calc.circleInfo(10)
 }
